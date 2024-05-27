@@ -16,6 +16,20 @@ This template equips you with a foundational Vue application integrated with AWS
 
 For detailed instructions on deploying your application, refer to the [deployment section](https://docs.amplify.aws/vue/start/quickstart/#deploy-a-fullstack-app-to-aws) of our documentation.
 
+## Local env
+
+Both frontend and backend should be running.
+Run 'backend sandbox' 
+```sh
+npx ampx sandbox
+```
+Command above updates the amplify_outputs.json - TBC  
+amplify_outputs.json can also be downloaded from AWS Amplify as per quickstart instructions - this will connect to AWS resources.
+
+Run frontend
+```sh
+npm run dev
+```
 
 ## Security
 
