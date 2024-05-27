@@ -11,7 +11,7 @@ const schema = a.schema({
     .model({
       content: a.string(),
     })
-  }).authorization(allow => [allow.owner()]),  // Each user has own data
+  .authorization(allow => [allow.owner()]),  // Each user has own data
     // .authorization((allow) => [allow.publicApiKey()]), // All users share same data
 });
 
@@ -25,9 +25,9 @@ export const data = defineData({
     defaultAuthorizationMode: 'userPool',
     // API Key is used for a.allow.public() rules
     // defaultAuthorizationMode: "apiKey",
-    apiKeyAuthorizationMode: {
-      expiresInDays: 30,
-    },
+    // apiKeyAuthorizationMode: {
+    //   expiresInDays: 30,
+    // },
   },
 });
 
